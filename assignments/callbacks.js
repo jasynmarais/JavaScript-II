@@ -73,13 +73,25 @@ sumNums(3, 5, function(sum) {
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  cb (x*y);
 }
+multiplyNums(3, 5, (times)=> {
+  console.log(times);
+});
 
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  if(list.includes(item)) {
+    cb(true);
+  } else{
+    cb(false);
+  }
 }
+contains('matches', items, (hasItem) =>{
+  console.log(hasItem);
+});
 
 /* STRETCH PROBLEM */
 
