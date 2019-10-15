@@ -54,7 +54,7 @@ const runners = [
   { id: 49, first_name: "Bel", last_name: "Alway", email: "balway1c@ow.ly", shirt_size: "S", company_name: "Voolia", donation: 107 },
   { id: 50, first_name: "Shell", last_name: "Baine", email: "sbaine1d@intel.com", shirt_size: "M", company_name: "Gabtype", donation: 171 },
 ];
-
+console.log("Array Methods - Challenge 1: ");
 // ==== Challenge 1: Use .forEach() ====
 // The event director needs both the first and last names of each runner for their running bibs. Combine both the first and last names and populate a new array called `fullNames`. This array will contain just strings.
 let fullNames = [];
@@ -63,14 +63,16 @@ runners.forEach(runner => {
 })
 console.log(fullNames);
 
+console.log("Array Methods - Challenge 2: ");
 // ==== Challenge 2: Use .map() ====
 // The event director needs to have all the runners' first names in uppercase because the director BECAME DRUNK WITH POWER. Populate an array called `firstNamesAllCaps`. This array will contain just strings.
 let firstNamesAllCaps = runners.map(runner => runner.first_name.toUpperCase())
 console.log(firstNamesAllCaps);
 
+console.log("Array Methods - Challenge 3: ");
 // ==== Challenge 3: Use .filter() ====
 // The large shirts won't be available for the event due to an ordering issue. We need a filtered version of the runners array, containing only those runners with large sized shirts so they can choose a different size. This will be an array of objects.
-let runnersLargeSizeShirt = [];
+let runnersLargeSizeShirt = runners.filter(runner => runner.shirt_size === 'L'); 
 console.log(runnersLargeSizeShirt);
 
 // ==== Challenge 4: Use .reduce() ====
