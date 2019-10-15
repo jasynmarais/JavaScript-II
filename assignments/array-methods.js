@@ -75,9 +75,10 @@ console.log("Array Methods - Challenge 3: ");
 let runnersLargeSizeShirt = runners.filter(runner => runner.shirt_size === 'L'); 
 console.log(runnersLargeSizeShirt);
 
+console.log("Array Methods - Challenge 4: ");
 // ==== Challenge 4: Use .reduce() ====
 // The donations need to be tallied up and reported for tax purposes. Add up all the donations and save the total into a ticketPriceTotal variable.
-let ticketPriceTotal = 0;
+let ticketPriceTotal = runners.reduce((total, runner) => total + runner.donation, 0)
 console.log(ticketPriceTotal);
 
 // ==== Challenge 5: Be Creative ====
