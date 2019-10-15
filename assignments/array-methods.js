@@ -90,7 +90,7 @@ let companyName= runners.filter(function(runners) {
   return runners.company_name === "Riffpedia";
 });
 
-console.log(companyName);
+console.table(companyName);
 
 console.log("Array Methods - Challenge 5: Problem 2");
 // Problem 2: Event planners want to send confirmation emails to all runners. Provide a list for them.
@@ -101,7 +101,13 @@ runners.forEach ((runners) => {
 
 });
 
-console.log(emails);
+console.table(emails);
 
+console.log("Array Methods - Challenge 5: Problem 3");
+// Problem 3 Runners last names need to be capitalised for the signs to go on the back of their shirts.
+let backSign=[]
+backSign =runners.map((runners) => {
+ return runners.last_name.toUpperCase();
+});
 
-// Problem 3
+console.table(backSign);
