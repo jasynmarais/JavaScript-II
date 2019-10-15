@@ -37,7 +37,7 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   firstItem(items, logExorbitantPrice);
   // "this Pencil is worth a million dollars!"
 */
-console.log("Task 1 - Higher Order Functions and Callbacks")
+console.log("Callbacks: Task 1 - Higher Order Functions and Callbacks")
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
