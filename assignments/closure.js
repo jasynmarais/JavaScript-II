@@ -14,8 +14,8 @@ function returnZen(){
 console.log(returnZen());
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
-
-
+                  
+console.log("Closure - Challenge 2: ");
 // ==== Challenge 2: Implement a "counter maker" function ====
 const counterMaker = () => {
   // IMPLEMENTATION OF counterMaker:
